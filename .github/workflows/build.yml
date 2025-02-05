@@ -2,7 +2,9 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
+    branches: [yunji]
   pull_request:
+    branches: [yunji]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -39,4 +41,4 @@ jobs:
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          token: ${{ secrets.CODECOV_TOKEN_YUNJI }}
