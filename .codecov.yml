@@ -1,0 +1,6 @@
+coverage:
+  status:
+    patch: # PR의 변경된 코드(diff) 커버리지 설정
+      default:
+        target: 60% # PR의 diff 커버리지가 최소 60% 이상이면 통과
+        threshold: 5% # 허용할 커버리지 감소 범위 (최대 5% 감소 허용)
